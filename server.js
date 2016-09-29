@@ -13,7 +13,14 @@ var articleOne = {
                 Ils sont squisheless.
     </p>`
 }
-
+var articleTwo = {
+    title: "Article One",
+    heading: "Article One",
+    content:`
+    <p>
+                Ils sont crackies.
+    </p>`
+}
 function createTemplate(data) {
     var title = data.title;
     var heading = data.heading;
@@ -55,7 +62,7 @@ app.get('/article-one', function (req, res) {
   res.send(createTemplate(articleOne));
 });
 app.get('/article-two', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
+  res.send(createTemplate(articleTwo));
 });
 
 app.get('/ui/style.css', function (req, res) {
