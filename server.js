@@ -14,8 +14,8 @@ var articleOne = {
     </p>`
 }
 var articleTwo = {
-    title: "Article One",
-    heading: "Article One",
+    title: "Article TWO",
+    heading: "Article Two",
     content:`
     <p>
                 Ils sont crackies.
