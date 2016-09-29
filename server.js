@@ -5,21 +5,23 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleOne = {
+var articles ={
+    articleOne:  {
     title: "Article One",
     heading: "Article One",
     content:`
     <p>
                 Ils sont squisheless.
     </p>`
-}
-var articleTwo = {
+},
+    articleTwo:  {
     title: "Article TWO",
     heading: "Article Two",
     content:`
     <p>
                 Ils sont crackies.
     </p>`
+}
 }
 function createTemplate(data) {
     var title = data.title;
