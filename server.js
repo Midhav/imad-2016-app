@@ -8,7 +8,7 @@ app.use(morgan('combined'));
 var articleOne = {
     title: "Article One",
     heading: "Article One",
-    Content:`
+    content:`
     <p>
                 Ils sont squisheless.
     </p>`
